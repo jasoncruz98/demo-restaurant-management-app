@@ -1,0 +1,10 @@
+{
+  "name": "@common/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "globals": "^15.14.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16"
+  }
+}

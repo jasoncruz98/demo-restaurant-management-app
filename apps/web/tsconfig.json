@@ -1,0 +1,3 @@
+{
+  "extends": "@common/typescript-config/vite-react/tsconfig.json"
+}
