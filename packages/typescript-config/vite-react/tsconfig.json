@@ -1,8 +1,5 @@
 {
   "extends": ".././base.json",
   "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "references": [{ "path": "./app.json" }, { "path": "./vite.json" }]
 }
