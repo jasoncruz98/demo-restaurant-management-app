@@ -1,5 +1,0 @@
-{
-  "extends": ".././base.json",
-  "files": [],
-  "references": [{ "path": "./app.json" }, { "path": "./vite.json" }]
-}

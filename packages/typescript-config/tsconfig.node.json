@@ -5,6 +5,10 @@
     "target": "ESNext",
     "moduleDetection": "force",
     "isolatedModules": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "composite": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true
   }
 }

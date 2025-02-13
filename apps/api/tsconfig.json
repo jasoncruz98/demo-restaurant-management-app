@@ -1,6 +1,9 @@
 {
-  "extends": "@common/typescript-config/node.json",
+  "extends": "@common/typescript-config/tsconfig.node.json",
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"],
-  "compilerOptions": { "rootDir": ".", "outDir": "dist"}
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist"
+  }
 }

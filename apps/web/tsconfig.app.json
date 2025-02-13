@@ -1,0 +1,10 @@
+{
+  "extends": "@common/typescript-config/react/tsconfig.app.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@api/*": ["../api/src/*"]
+    }
+  }
+}

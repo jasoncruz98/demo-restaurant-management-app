@@ -1,5 +1,5 @@
 {
-  "name": "@repo/api",
+  "name": "api",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,7 @@
     "dev": "tsx --watch src/index.ts",
     "build": "rm -rf ./dist && tsc --build",
     "start": "node dist/src/index.js",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc -b",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
