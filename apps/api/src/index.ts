@@ -1,6 +1,8 @@
 import express from "express";
+import cors from "cors";
 import * as trpcExpress from "@trpc/server/adapters/express";
 import { publicProcedure, router } from "./trpc";
+import type { inferRouterOutputs } from "@trpc/server";
 
 const appRouter = router({
   hello: publicProcedure.query(() => {
@@ -9,11 +11,19 @@ const appRouter = router({
 });
 
 export type AppRouter = typeof appRouter;
+export type RouterOutput = inferRouterOutputs<AppRouter>;
 
 const app = express();
 const port = process.env.PORT || 3000;
+const frontendPort = process.env.FRONTEND_PORT || 5173;
 
-app.get("/", (req, res) => {
+app.use(
+  cors({
+    origin: `http://localhost:${frontendPort}`
+  })
+);
+
+app.get("/", (_req, res) => {
   res.send("Hello, world!");
 });
 
